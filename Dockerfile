@@ -9,7 +9,7 @@ ENV LC_ALL en_US.UTF-8
 
 ENV ON_DOCKER YES
 
-RUN sudo apt-get update -y && apt-get dist-upgrade -fy
+RUN apt-get -q update
 RUN apt-get install -y \
 	git \
 	wget \
