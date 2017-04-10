@@ -22,6 +22,8 @@ RUN git clone https://github.com/muukii/env.dotfiles.git /env.dotfiles
 WORKDIR /env.dotfiles
 RUN make
 
+WORKDIR /
+
 # Define default command.
 CMD ["/bin/zsh"]
 
